@@ -90,7 +90,6 @@ def main(argv=None):
 	    url = u'http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q='
 	    query = url + urllib.quote(text) + u'&langpair=%7Cen'
 	    
-	print url
 	request = urllib2.Request(url = query, origin_req_host = referer)
 	resp = urllib2.urlopen(request)
 		
